@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css?family=Livvic|Raleway&display=swap');
+
+:root {
+    --accent-color: #0c61eb;
+    --font-color: black;
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    max-width: 980px;
+    margin: auto;
+}
+
+header nav .logo {
+    font-family: 'Livvic', sans-serif;
+    font-size: 3rem;
+    margin: 1rem 0;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--accent-color);
+}
+
+header nav .menu {
+    display: flex;
+    padding: 0;
+    list-style-type: none;
+    justify-content: space-around;
+}
+
+header nav .menu li a {
+    text-decoration: none;
+    color: var(--font-color);
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    padding: 3px;
+}
+
+header nav .menu li a:hover  {
+    border: 1px solid var(--accent-color);
+}
+
+@media (min-width: 600px) {
+    header nav {
+        display: flex;
+        align-items: center;
+    }
+
+    header nav .menu {
+        flex: 1;
+    }
+}
+
+
